@@ -12,4 +12,4 @@ npm i socket.io to load package-lock.json and node_modules folder
 
 
 difficulty-> deprecated variable name in client.js and index.js common in both 
--> user and users problem in index.js
+
