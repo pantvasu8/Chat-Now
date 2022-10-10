@@ -1,4 +1,4 @@
-# Chat-Now
+# Chat-Now Realtime chat application using NodeJs and socket.io
 Web sockets solves the big problem of http response ->one way connection client request server response never like server request or push some update
 Server can also push update to client http protocol -> not such a case where server give connection to client 
 one way is there to solve this problem ->Http long Polling
