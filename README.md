@@ -9,3 +9,7 @@ AJAX - server stores in database that new user entered then read request to read
 two servers client server and node server
 npm init to create package.json file
 npm i socket.io to load package-lock.json and node_modules folder
+
+
+difficulty-> deprecated variable name in client.js and index.js common in both 
+-> user and users problem in index.js
