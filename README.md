@@ -1,6 +1,6 @@
 # Realtime Chat Application 
 
->Talk-a-tive is a <b>Full Stack Chatting App.</b> <br>
+>ChatNow is a <b>Full Stack Chatting App.</b> <br>
 >Uses Socket.io for <b>real time communication</b> and stores user details in encrypted format in <b>Mongo DB Database.</b>
 
 ## Tech Stack
