@@ -1,27 +1,36 @@
-import { BellIcon, ChevronDownIcon } from '@chakra-ui/icons';
-import { 
-  Avatar, 
-  Box, Button, 
-  Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOverlay, 
-  Input, 
-  Menu, MenuButton, MenuDivider, MenuItem, MenuList, 
-  Spinner, 
-  Text, Tooltip, 
-  useDisclosure, 
-  useToast } from '@chakra-ui/react';
-import { Effect } from 'react-notification-badge';
-import NotificationBadge from 'react-notification-badge/lib/components/NotificationBadge';
-
-
-
-import { useNavigate } from "react-router-dom";
+import { Button } from "@chakra-ui/button";
+import { useDisclosure } from "@chakra-ui/hooks";
+import { Input } from "@chakra-ui/input";
+import { Box, Text } from "@chakra-ui/layout";
+import {
+  Menu,
+  MenuButton,
+  MenuDivider,
+  MenuItem,
+  MenuList,
+} from "@chakra-ui/menu";
+import {
+  Drawer,
+  DrawerBody,
+  DrawerContent,
+  DrawerHeader,
+  DrawerOverlay,
+} from "@chakra-ui/modal";
+import { Tooltip } from "@chakra-ui/tooltip";
+import { BellIcon, ChevronDownIcon } from "@chakra-ui/icons";
+import { Avatar } from "@chakra-ui/avatar";
+import { useHistory } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
-import { getSender } from "../../config/ChatLogics";
-import { ChatState } from "../../Context/ChatProvider";
-import UserListItem from "../UserAvatar/UserListItem";
-import ProfileModal from "./ProfileModal";
+import { useToast } from "@chakra-ui/toast";
 import ChatLoading from "../ChatLoading";
+import { Spinner } from "@chakra-ui/spinner";
+import ProfileModal from "./ProfileModal";
+import NotificationBadge from "react-notification-badge";
+import { Effect } from "react-notification-badge";
+import { getSender } from "../../config/ChatLogics";
+import UserListItem from "../userAvatar/UserListItem";
+import { ChatState } from "../../Context/ChatProvider";
 
 function SideDrawer() {
   const [search, setSearch] = useState("");
@@ -30,22 +39,21 @@ function SideDrawer() {
   const [loadingChat, setLoadingChat] = useState(false);
 
   const {
-    user,
     setSelectedChat,
-    chats,
-    setChats,
+    user,
     notification,
     setNotification,
+    chats,
+    setChats,
   } = ChatState();
 
   const toast = useToast();
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const navigate = useNavigate();
+  const history = useHistory();
 
   const logoutHandler = () => {
     localStorage.removeItem("userInfo");
-    navigate("/");
-    window.location.reload();
+    history.push("/");
   };
 
   const handleSearch = async () => {
@@ -134,7 +142,7 @@ function SideDrawer() {
           </Button>
         </Tooltip>
         <Text fontSize="2xl" fontFamily="Work sans">
-          Talk-A-Tive
+          Chat-Now
         </Text>
         <div>
           <Menu>

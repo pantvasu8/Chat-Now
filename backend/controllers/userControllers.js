@@ -15,7 +15,6 @@ const allUsers = asyncHandler(async (req, res) => {
       }
     : {};
 
-  // get matching users except for currently logged in
   const users = await User.find(keyword).find({ _id: { $ne: req.user._id } });
   res.send(users);
 });
