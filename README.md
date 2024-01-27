@@ -20,17 +20,32 @@ Note- Expect a brief delay (upto 60 seconds) during the spinning up process for 
 
 1. **Authentication**: Users can sign up, log in, and authenticate themselves securely.
 
+![authentication](https://github.com/pantvasu8/Chat-Now/assets/96621003/8b6d5ae1-b5f5-4e23-aadd-13c127790d67)
+
 2. **One-to-One Chat**: Engage in private conversations with other users in real time.
 
-3. **Group Chat**: Create or join group chats for collaborative discussions.
+![one to one](https://github.com/pantvasu8/Chat-Now/assets/96621003/33535bb2-b59a-41ac-8920-0c4b73627adf)
 
-4. **Real-Time Chatting with Typing Indicators**: See when others are typing, providing a more dynamic and interactive chatting experience.
+3. **Real-Time Chatting with Typing Indicators**: See when others are typing, providing a more dynamic and interactive chatting experience.
 
-5. **Search User**: Quickly find and connect with other users through a search functionality.
+![realtime typing indicator](https://github.com/pantvasu8/Chat-Now/assets/96621003/0acbafae-3260-457d-8ff3-6450d4cc627b)
+
+4. **Search User**: Quickly find and connect with other users through a search functionality.
+
+![search user](https://github.com/pantvasu8/Chat-Now/assets/96621003/54ede755-5b55-4fdf-a2c5-98df2604697f)
+
+5. **Group Chat**: Create or join group chats for collaborative discussions.
+
+![group](https://github.com/pantvasu8/Chat-Now/assets/96621003/683c718f-c89b-4841-bd28-ee1d8e7037a7)
 
 6. **Notification**: Receive real-time notifications for new messages or other relevant events.
 
+![notification](https://github.com/pantvasu8/Chat-Now/assets/96621003/c5391b75-cb9a-473b-b6cb-52fab5d93b26)
+
 7. **View Profile**: Access and view user profiles to learn more about your contacts.
+
+![profile](https://github.com/pantvasu8/Chat-Now/assets/96621003/6676eab9-883a-4204-ba0f-4c7d8c673ce2)
+
 
 ## Getting Started
 
